@@ -58,7 +58,7 @@ class ScheduleStealer:
         return body
 
     def post_date_change(self, date_string: str):
-        assert datetime.now().date().isoformat != date_string
+        assert datetime.now().date().isoformat() != date_string
         '''
         Zawiera wyłącznie HTML IDs
         '''
