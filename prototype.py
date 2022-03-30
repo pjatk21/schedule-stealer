@@ -1,18 +1,10 @@
+from datetime import datetime, timedelta
+import json
 import re
 from urllib.request import Request
 from httpx import Client, Response
 from bs4 import BeautifulSoup
 from pathlib import Path
-
-client = Client(headers={
-    'X-MicrosoftAjax': 'Delta=true',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36',
-    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
-})
-
-inital_response = client.get(
-    'https://planzajec.pjwstk.edu.pl/PlanOgolny3.aspx')
-assert inital_response.status_code == 200
 
 
 class ScheduleStealer:
@@ -65,13 +57,14 @@ class ScheduleStealer:
 
         return body
 
-    def post_date_change(self):
+    def post_date_change(self, date_string: str):
+        assert datetime.now().date().isoformat != date_string
         '''
         Zawiera wyłącznie HTML IDs
         '''
         response = client.post(
             'https://planzajec.pjwstk.edu.pl/PlanOgolny3.aspx',
-            data=self.body_date_change('2022-03-28'))
+            data=self.body_date_change(date_string))
         self.__update_base_states_from_delta(response)
         return response
 
@@ -105,21 +98,33 @@ class ScheduleStealer:
         return html_ids
     
 if __name__ == '__main__':
+    client = Client(headers={
+        'X-MicrosoftAjax': 'Delta=true',
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36',
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+    })
+
+    inital_response = client.get('https://planzajec.pjwstk.edu.pl/PlanOgolny3.aspx')
+    assert inital_response.status_code == 200   
+
     sb = ScheduleStealer(inital_response)
-    x1 = sb.post_date_change()
-
-    with open('debug_date_change.html', 'w') as file:
-        file.write(x1.content.decode('utf-8').split('|')[7])
-
-    all_ids = sb.get_html_ids_for_date(x1)
+    working_date = (datetime.now().date() + timedelta(days=1)).isoformat()
+    x1 = sb.post_date_change(working_date)
 
     debug_path = Path('debug')
     debug_path.mkdir(parents=True, exist_ok=True)
 
+    with open('debug/debug_date_change.html', 'w') as file:
+        file.write(x1.content.decode('utf-8').split('|')[7])
+
+    all_ids = sb.get_html_ids_for_date(x1)
+
+    start = datetime.now()
     for h_id in all_ids:
         print('Downloading', h_id)
         with open(f'debug/debug_verbose_info_{h_id}.html', 'w') as file:
             file.write(sb.get_verbose_data(h_id).content.decode('utf-8').split('|')[7])
+    print(datetime.now() - start)
     
 
 # Reverse engineering by @rafalopilowski1

@@ -1,0 +1,3040 @@
+'
+<div id="RadAjaxPanel1">\r\n\t
+    <!-- 2018.1.117.40 -->\r\n
+    <div id="RadToolTipManager1" style="display:none;position:absolute;">\r\n\t\t
+        <div id="RadToolTipManager1RTMPanel">\r\n\r\n\t\t</div><input id="RadToolTipManager1_ClientState" name="RadToolTipManager1_ClientState" type="hidden" />\r\n\t</div>\r\n
+    <div id="RadToolTipManager2" style="display:none;position:absolute;">\r\n\t\t
+        <div id="RadToolTipManager2RTMPanel">\r\n\r\n\t\t</div><input id="RadToolTipManager2_ClientState" name="RadToolTipManager2_ClientState" type="hidden" />\r\n\t</div>\r\n
+    <div>\r\n
+        <table style="border-collapse: collapse; margin: 5px; float: left;">\r\n
+            <tr>\r\n
+                <td colspan="2">\r\n
+                    <h3>Ogólny plan zajęć</h3>\r\n <a href="Default.aspx">Powrót do strony głównej</a><br />\r\n <br />\r\n </td>\r\n </tr>\r\n
+            <tr>\r\n
+                <td style="vertical-align: top;">\r\n Wydział\r\n </td>\r\n
+                <td>\r\n
+                    <div id="WydzialComboBox" class="RadComboBox RadComboBox_Simple" style="width:300px;white-space:normal;">\r\n\t\t
+                        <table summary="combobox" style="border-width:0;border-collapse:collapse;width:100%">\r\n\t\t\t
+                            <tr class="rcbReadOnly">\r\n\t\t\t\t
+                                <td class="rcbInputCell rcbInputCellLeft" style="width:100%;"><input name="WydzialComboBox" type="text" class="rcbInput radPreventDecorate" id="WydzialComboBox_Input" value="Warszawa" readonly="readonly" /></td>
+                                <td class="rcbArrowCell rcbArrowCellRight"><a id="WydzialComboBox_Arrow" style="overflow: hidden;display: block;position: relative;outline: none;">select</a></td>\r\n\t\t\t</tr>\r\n\t\t</table>
+                        <div class="rcbSlide" style="z-index:6000;display:none;">
+                            <div id="WydzialComboBox_DropDown" class="RadComboBoxDropDown RadComboBoxDropDown_Simple ">
+                                <div class="rcbScroll rcbWidth">
+                                    <ul class="rcbList">
+                                        <li class="rcbItem">Warszawa</li>
+                                        <li class="rcbItem">Gdańsk</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><input id="WydzialComboBox_ClientState" name="WydzialComboBox_ClientState" type="hidden" />\r\n\t</div>\r\n \r\n </td>\r\n </tr>\r\n
+            <tr>\r\n
+                <td style="vertical-align: top;">Dzień</td>\r\n
+                <td style="vertical-align: top;">\r\n
+                    <div id="DataPicker_wrapper" class="RadPicker RadPicker_Simple" style="display:inline-block;width:160px;font-size:Medium;">\r\n\t\t<input style="visibility:hidden;display:block;float:right;margin:0 0 -1px -1px;width:1px;height:1px;overflow:hidden;border:0;padding:0;" id="DataPicker" name="DataPicker" type="text" class="rdfd_ radPreventDecorate" value="2022-03-31"
+                            title="Visually hidden input created for functionality purposes." />
+                        <table cellspacing="0" class="rcTable rcSingle" summary="Table holding date picker control for selection of dates." style="width:100%;">\r\n\t\t\t
+                            <caption style="display:none;">\r\n\t\t\t\tRadDatePicker\r\n\t\t\t</caption>
+                            <thead style="display:none;">\r\n\t\t\t\t
+                                <tr>\r\n\t\t\t\t\t
+                                    <th scope="col">RadDatePicker</th>\r\n\t\t\t\t</tr>\r\n\t\t\t</thead>
+                            <tbody>\r\n\t\t\t\t
+                                <tr>\r\n\t\t\t\t\t
+                                    <td class="rcInputCell" style="width:100%;"><span id="DataPicker_dateInput_wrapper" class="riSingle RadInput RadInput_Simple" style="display:block;width:100%;"><input id="DataPicker_dateInput" name="DataPicker$dateInput" class="riTextBox riEnabled" value="2022-03-31" type="text" /><input id="DataPicker_dateInput_ClientState" name="DataPicker_dateInput_ClientState" type="hidden" /></span></td>
+                                    <td><a title="Open the calendar popup." href="#" id="DataPicker_popupButton" class="rcCalPopup">Open the calendar popup.</a>
+                                        <div id="DataPicker_calendar_wrapper" style="display:none;">\r\n\t\t\t\t\t\t
+                                            <table id="DataPicker_calendar" cellspacing="0" class="RadCalendar RadCalendar_Simple">\r\n\t\t\t\t\t\t\t
+                                                <caption>\r\n\t\t\t\t\t\t\t\t<span style=\ 'display:none;\'>Calendar</span>\r\n\t\t\t\t\t\t\t</caption>
+                                                <thead>\r\n\t\t\t\t\t\t\t\t
+                                                    <tr>\r\n\t\t\t\t\t\t\t\t\t
+                                                        <td class="rcTitlebar">
+                                                            <table cellspacing="0">\r\n\t\t\t\t\t\t\t\t\t\t
+                                                                <caption>\r\n\t\t\t\t\t\t\t\t\t\t\t<span style=\ 'display:none;\'>Title and navigation</span>\r\n\t\t\t\t\t\t\t\t\t\t</caption>
+                                                                <thead>\r\n\t\t\t\t\t\t\t\t\t\t\t
+                                                                    <tr style="display:none;">\r\n\t\t\t\t\t\t\t\t\t\t\t\t
+                                                                        <th scope="col">Title and navigation</th>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</thead>
+                                                                <tbody>\r\n\t
+                                                                    <tr>\r\n\t\t
+                                                                        <td><a id="DataPicker_calendar_FNP" class="t-button rcFastPrev" title="&lt;&lt;" href="#">&lt;&lt;</a></td>
+                                                                        <td><a id="DataPicker_calendar_NP" class="t-button rcPrev" title="&lt;" href="#">&lt;</a></td>
+                                                                        <td id="DataPicker_calendar_Title" class="rcTitle">marzec 2022</td>
+                                                                        <td><a id="DataPicker_calendar_NN" class="t-button rcNext" title=">" href="#">&gt;</a></td>
+                                                                        <td><a id="DataPicker_calendar_FNN" class="t-button rcFastNext" title=">>" href="#">&lt;&lt;</a></td>\r\n\t</tr>\r\n</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>
+                                                        </td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</thead>
+                                                <tbody>\r\n\t
+                                                    <tr>\r\n\t\t
+                                                        <td class="rcMain">
+                                                            <table id="DataPicker_calendar_Top" class="rcMainTable" cellspacing="0">\r\n\t
+                                                                <caption>\r\n\t\t<span style=\ 'display:none;\'>marzec 2022</span>\r\n\t</caption>
+                                                                <thead>\r\n\t\t
+                                                                    <tr class="rcWeek">\r\n\t\t\t
+                                                                        <th class="rcViewSel" scope="col">&nbsp;</th>
+                                                                        <th id="DataPicker_calendar_Top_cs_1" title="poniedziałek" scope="col">p</th>
+                                                                        <th id="DataPicker_calendar_Top_cs_2" title="wtorek" scope="col">w</th>
+                                                                        <th id="DataPicker_calendar_Top_cs_3" title="środa" scope="col">ś</th>
+                                                                        <th id="DataPicker_calendar_Top_cs_4" title="czwartek" scope="col">c</th>
+                                                                        <th id="DataPicker_calendar_Top_cs_5" title="piątek" scope="col">p</th>
+                                                                        <th id="DataPicker_calendar_Top_cs_6" title="sobota" scope="col">s</th>
+                                                                        <th id="DataPicker_calendar_Top_cs_7" title="niedziela" scope="col">n</th>\r\n\t\t</tr>\r\n\t</thead>
+                                                                <tbody>\r\n\t\t
+                                                                    <tr class="rcRow">\r\n\t\t\t
+                                                                        <th id="DataPicker_calendar_Top_rs_1" scope="row">9</th>
+                                                                        <td class="rcOtherMonth" title="poniedziałek, lutego 28, 2022"><a href="#">28</a></td>
+                                                                        <td title="wtorek, marca 01, 2022"><a href="#">1</a></td>
+                                                                        <td title="środa, marca 02, 2022"><a href="#">2</a></td>
+                                                                        <td title="czwartek, marca 03, 2022"><a href="#">3</a></td>
+                                                                        <td title="piątek, marca 04, 2022"><a href="#">4</a></td>
+                                                                        <td class="rcWeekend" title="sobota, marca 05, 2022"><a href="#">5</a></td>
+                                                                        <td class="rcWeekend" title="niedziela, marca 06, 2022"><a href="#">6</a></td>\r\n\t\t</tr>
+                                                                    <tr class="rcRow">\r\n\t\t\t
+                                                                        <th id="DataPicker_calendar_Top_rs_2" scope="row">10</th>
+                                                                        <td title="poniedziałek, marca 07, 2022"><a href="#">7</a></td>
+                                                                        <td title="wtorek, marca 08, 2022"><a href="#">8</a></td>
+                                                                        <td title="środa, marca 09, 2022"><a href="#">9</a></td>
+                                                                        <td title="czwartek, marca 10, 2022"><a href="#">10</a></td>
+                                                                        <td title="piątek, marca 11, 2022"><a href="#">11</a></td>
+                                                                        <td class="rcWeekend" title="sobota, marca 12, 2022"><a href="#">12</a></td>
+                                                                        <td class="rcWeekend" title="niedziela, marca 13, 2022"><a href="#">13</a></td>\r\n\t\t</tr>
+                                                                    <tr class="rcRow">\r\n\t\t\t
+                                                                        <th id="DataPicker_calendar_Top_rs_3" scope="row">11</th>
+                                                                        <td title="poniedziałek, marca 14, 2022"><a href="#">14</a></td>
+                                                                        <td title="wtorek, marca 15, 2022"><a href="#">15</a></td>
+                                                                        <td title="środa, marca 16, 2022"><a href="#">16</a></td>
+                                                                        <td title="czwartek, marca 17, 2022"><a href="#">17</a></td>
+                                                                        <td title="piątek, marca 18, 2022"><a href="#">18</a></td>
+                                                                        <td class="rcWeekend" title="sobota, marca 19, 2022"><a href="#">19</a></td>
+                                                                        <td class="rcWeekend" title="niedziela, marca 20, 2022"><a href="#">20</a></td>\r\n\t\t</tr>
+                                                                    <tr class="rcRow">\r\n\t\t\t
+                                                                        <th id="DataPicker_calendar_Top_rs_4" scope="row">12</th>
+                                                                        <td title="poniedziałek, marca 21, 2022"><a href="#">21</a></td>
+                                                                        <td title="wtorek, marca 22, 2022"><a href="#">22</a></td>
+                                                                        <td title="środa, marca 23, 2022"><a href="#">23</a></td>
+                                                                        <td title="czwartek, marca 24, 2022"><a href="#">24</a></td>
+                                                                        <td title="piątek, marca 25, 2022"><a href="#">25</a></td>
+                                                                        <td class="rcWeekend" title="sobota, marca 26, 2022"><a href="#">26</a></td>
+                                                                        <td class="rcWeekend" title="niedziela, marca 27, 2022"><a href="#">27</a></td>\r\n\t\t</tr>
+                                                                    <tr class="rcRow">\r\n\t\t\t
+                                                                        <th id="DataPicker_calendar_Top_rs_5" scope="row">13</th>
+                                                                        <td title="poniedziałek, marca 28, 2022"><a href="#">28</a></td>
+                                                                        <td title="wtorek, marca 29, 2022"><a href="#">29</a></td>
+                                                                        <td title="środa, marca 30, 2022"><a href="#">30</a></td>
+                                                                        <td title="czwartek, marca 31, 2022"><a href="#">31</a></td>
+                                                                        <td class="rcOtherMonth" title="piątek, kwietnia 01, 2022"><a href="#">1</a></td>
+                                                                        <td class="rcOtherMonth" title="sobota, kwietnia 02, 2022"><a href="#">2</a></td>
+                                                                        <td class="rcOtherMonth" title="niedziela, kwietnia 03, 2022"><a href="#">3</a></td>\r\n\t\t</tr>
+                                                                    <tr class="rcRow">\r\n\t\t\t
+                                                                        <th id="DataPicker_calendar_Top_rs_6" scope="row">14</th>
+                                                                        <td class="rcOtherMonth" title="poniedziałek, kwietnia 04, 2022"><a href="#">4</a></td>
+                                                                        <td class="rcOtherMonth" title="wtorek, kwietnia 05, 2022"><a href="#">5</a></td>
+                                                                        <td class="rcOtherMonth" title="środa, kwietnia 06, 2022"><a href="#">6</a></td>
+                                                                        <td class="rcOtherMonth" title="czwartek, kwietnia 07, 2022"><a href="#">7</a></td>
+                                                                        <td class="rcOtherMonth" title="piątek, kwietnia 08, 2022"><a href="#">8</a></td>
+                                                                        <td class="rcOtherMonth" title="sobota, kwietnia 09, 2022"><a href="#">9</a></td>
+                                                                        <td class="rcOtherMonth" title="niedziela, kwietnia 10, 2022"><a href="#">10</a></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>
+                                                        </td>\r\n\t</tr>\r\n</tbody>\r\n\t\t\t\t\t\t</table><input type="hidden" name="DataPicker_calendar_SD" id="DataPicker_calendar_SD" value="[]" /><input type="hidden" name="DataPicker_calendar_AD" id="DataPicker_calendar_AD"
+                                                value="[[1980,1,1],[2099,12,30],[2022,3,30]]" />\r\n\t\t\t\t\t</div>
+                                    </td>\r\n\t\t\t\t</tr>\r\n\t\t\t</tbody>\r\n\t\t</table><input id="DataPicker_ClientState" name="DataPicker_ClientState" type="hidden" />\r\n\t</div>\r\n </td>\r\n </tr>\r\n </table>\r\n
+        <table style="border-collapse: collapse; margin: 5px; float: left;">\r\n
+            <tr>\r\n
+                <td id="EksportOptions" style="padding-left: 50px;">\r\n
+                    <h3>Eksport planu do pliku</h3>\r\n <span id="DzienButton" class="RadButton RadButton_Simple rbToggleButton"><span class="rbPrimaryIcon rbToggleRadioChecked"></span><span class="rbText rbPrimary">Wybrany dzień zajęć</span><input id="DzienButton_ClientState"
+                        name="DzienButton_ClientState" type="hidden" /></span>\r\n <br />\r\n <span id="TydzienButton" class="RadButton RadButton_Simple rbToggleButton"><span class="rbPrimaryIcon rbToggleRadio"></span><span class="rbText rbPrimary">Wybrany tydzień zajęć</span><input
+                        id="TydzienButton_ClientState" name="TydzienButton_ClientState" type="hidden" /></span>\r\n <br />\r\n
+                    <div id="TygodnieListBox" disabled="disabled" class="RadListBox RadListBox_Simple RadListBoxScrollable" style="height:100px;width:150px;">\r\n\t\t
+                        <div class="rlbGroup rlbGroupRight">\r\n\t\t\t
+                            <ul class="rlbList">\r\n\t\t\t\t
+                                <li id="TygodnieListBox_i0" disabled="disabled" class="rlbItem rlbDisabled rlbSelected"><span class="rlbText">4</span></li>\r\n\t\t\t</ul>\r\n\t\t</div><input id="TygodnieListBox_ClientState" name="TygodnieListBox_ClientState" type="hidden" />\r\n\t</div>\r\n \r\n </td>\r\n\t\r\n
+                <td style="width: 120px;">\r\n <span id="ZajeteSaleButton" class="RadButton RadButton_Simple rbToggleButton"><span class="rbPrimaryIcon rbToggleRadioChecked"></span><span class="rbText rbPrimary">Zajęte sale</span><input id="ZajeteSaleButton_ClientState" name="ZajeteSaleButton_ClientState"
+                        type="hidden" /></span>\r\n <br />\r\n <span id="WszystkieSaleButton" class="RadButton RadButton_Simple rbToggleButton"><span class="rbPrimaryIcon rbToggleRadio"></span><span class="rbText rbPrimary">Wszystkie sale</span><input id="WszystkieSaleButton_ClientState"
+                        name="WszystkieSaleButton_ClientState" type="hidden" /></span>\r\n </td>\r\n
+                <td id="EksportButton">\r\n <span id="ExcelExportButton" class="RadButton RadButton_Simple rbSkinnedButton"><input class="rbDecorated" type="submit" name="ExcelExportButton_input" id="ExcelExportButton_input" value="Eksportuj do Excel&#39;a" /><input id="ExcelExportButton_ClientState" name="ExcelExportButton_ClientState" type="hidden" /></span>\r\n
+                    </td>\r\n </tr>\r\n </table>\r\n
+        <table style="border-collapse: collapse; margin: 5px; float: left;">\r\n
+            <tr>\r\n
+                <td style="padding-left: 50px;">\r\n
+                    <h3>Legenda</h3>\r\n Wybierz studia\r\n <br />\r\n
+                    <div id="StudiaLegendaComboBox" class="RadComboBox RadComboBox_Simple" style="width:350px;white-space:normal;">\r\n\t\t
+                        <table summary="combobox" style="border-width:0;border-collapse:collapse;width:100%">\r\n\t\t\t
+                            <tr class="rcbReadOnly">\r\n\t\t\t\t
+                                <td class="rcbInputCell rcbInputCellLeft" style="width:100%;"><input name="StudiaLegendaComboBox" type="text" class="rcbInput radPreventDecorate" id="StudiaLegendaComboBox_Input" value="Architektura Wnętrz dzienne" readonly="readonly" /></td>
+                                <td class="rcbArrowCell rcbArrowCellRight"><a id="StudiaLegendaComboBox_Arrow" style="overflow: hidden;display: block;position: relative;outline: none;">select</a></td>\r\n\t\t\t</tr>\r\n\t\t</table>
+                        <div class="rcbSlide" style="z-index:6000;display:none;">
+                            <div id="StudiaLegendaComboBox_DropDown" class="RadComboBoxDropDown RadComboBoxDropDown_Simple ">
+                                <div class="rcbScroll rcbWidth">
+                                    <ul class="rcbList">
+                                        <li class="rcbItem">Architektura Wnętrz dzienne</li>
+                                        <li class="rcbItem">Architektura Wnętrz zaoczne</li>
+                                        <li class="rcbItem">Cyberbezpieczeństwo system&#243;w informatycznych i telekomunikacyjnych</li>
+                                        <li class="rcbItem">Grafika Dzienne Gdańsk</li>
+                                        <li class="rcbItem">Grafika Zaoczne Gdańsk</li>
+                                        <li class="rcbItem">Informatyka doktoranckie</li>
+                                        <li class="rcbItem">Informatyka dzienne</li>
+                                        <li class="rcbItem">Informatyka dzienne Gdańsk</li>
+                                        <li class="rcbItem">Informatyka dzienne po angielsku</li>
+                                        <li class="rcbItem">Informatyka internetowe</li>
+                                        <li class="rcbItem">Informatyka internetowe magisterskie</li>
+                                        <li class="rcbItem">Informatyka internetowe po angielsku</li>
+                                        <li class="rcbItem">Informatyka magisterskie 3 sem</li>
+                                        <li class="rcbItem">Informatyka magisterskie 3 sem - Data Science</li>
+                                        <li class="rcbItem">Informatyka magisterskie 3 sem po angielsku</li>
+                                        <li class="rcbItem">Informatyka magisterskie 3 sem po angielsku - Data Science</li>
+                                        <li class="rcbItem">Informatyka magisterskie 4 sem</li>
+                                        <li class="rcbItem">Informatyka magisterskie 4 sem po angielsku</li>
+                                        <li class="rcbItem">Informatyka magisterskie uzupełniające zaoczne</li>
+                                        <li class="rcbItem">Informatyka magisterskie uzupełniające zaoczne Data Science</li>
+                                        <li class="rcbItem">Informatyka niestacjonarne Gdańsk</li>
+                                        <li class="rcbItem">Informatyka Społeczna zaoczne</li>
+                                        <li class="rcbItem">Informatyka stacjonarne Gdańsk</li>
+                                        <li class="rcbItem">Informatyka zaoczne</li>
+                                        <li class="rcbItem">Informatyka zaoczne Gdańsk</li>
+                                        <li class="rcbItem">Kultura Japonii Dzienne</li>
+                                        <li class="rcbItem">Kultura Japonii Niestacjonarne</li>
+                                        <li class="rcbItem">Kultura Japonii Stacjonarne</li>
+                                        <li class="rcbItem">Kultura Japonii Zaoczne</li>
+                                        <li class="rcbItem">MBA dla branży IT</li>
+                                        <li class="rcbItem">Międzyuczelniane Interdyscyplinarne Studia Doktoranckie - Psychologia &amp; Informatyka</li>
+                                        <li class="rcbItem">Podyplomowe Bazy danych i ich aplikacje internetowe</li>
+                                        <li class="rcbItem">Podyplomowe Bazy danych i ich aplikacje zaoczne</li>
+                                        <li class="rcbItem">Podyplomowe Big Data – Inżynieria dużych zbior&#243;w danych</li>
+                                        <li class="rcbItem">Podyplomowe Gdańsk Projektowanie Graficzne</li>
+                                        <li class="rcbItem">Podyplomowe Grafika projektowa</li>
+                                        <li class="rcbItem">Podyplomowe Systemy informatyczne, aplikacje i bazy danych internetowe</li>
+                                        <li class="rcbItem">Podyplomowe Zarządzanie oświatą z edukacją spersonalizowaną</li>
+                                        <li class="rcbItem">Sztuka Nowych Medi&#243;w dzienne</li>
+                                        <li class="rcbItem">Sztuka Nowych Medi&#243;w dzienne po angielsku</li>
+                                        <li class="rcbItem">Sztuka nowych medi&#243;w jednolite magist. zaoczne</li>
+                                        <li class="rcbItem">Sztuka Nowych Medi&#243;w uzupełniające magist. zaoczne</li>
+                                        <li class="rcbItem">Sztuka Nowych Medi&#243;w uzupełniające magisterskie</li>
+                                        <li class="rcbItem">Sztuka Nowych Medi&#243;w uzupełniające magisterskie po angielsku</li>
+                                        <li class="rcbItem">Sztuka Nowych Medi&#243;w zaoczne 6 sem.</li>
+                                        <li class="rcbItem">Zarządzanie Informacją magisterskie</li>
+                                        <li class="rcbItem">Zarządzanie Informacją magisterskie zaoczne</li>
+                                        <li class="rcbItem">Zarządzanie informacją niestacjonarne (kierunek Zarządzanie Informacją)</li>
+                                        <li class="rcbItem">Zarządzanie informacją stacjonarne (kierunek Zarządzanie Informacją)</li>
+                                        <li class="rcbItem">Zarządzanie Informacją stacjonarne po angielsku (kierunek Zarządzanie Informacją)</li>
+                                        <li class="rcbItem">Zarządzanie informacją zaoczne (kierunek Zarządzanie)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><input id="StudiaLegendaComboBox_ClientState" name="StudiaLegendaComboBox_ClientState" type="hidden" />\r\n\t</div>\r\n \r\n <br />\r\n
+                    <div style="margin-top: 10px;">\r\n <span id="KolorTlaLabel" style="display:inline-block;background-color:#C6233E;border-width:1px;border-style:Solid;width:150px;text-align: center; padding: 10px;">Kolor tła</span>\r\n <span id="KolorCzcionkiLabel" ReadOnly="true"
+                            style="display:inline-block;background-color:#000000;border-width:1px;border-style:Solid;width:150px;text-align: center; padding: 10px;">Kolor czcionki</span>\r\n </div>\r\n </td>\r\n\t\r\n
+                <td></td>\r\n
+                <td></td>\r\n </tr>\r\n </table>\r\n\r\n \r\n <br />\r\n <br />\r\n
+        <table id="ZajeciaTable" class="table-3 tableWithFloatingHeader">\r\n\t\t
+            <thead>\r\n\t\t\t
+                <tr id="BudynkiTableHeaderRow">\r\n\t\t\t\t
+                    <td></td>
+                    <td></td>
+                    <td class="budynek title" colspan="1">B2020</td>
+                    <td class="budynek title" colspan="1">A2020</td>
+                    <td class="budynek title" colspan="1" style="background-color:#FFFA65;">C</td>
+                    <td class="budynek title" colspan="1">A2020</td>
+                    <td class="budynek title" colspan="2">B2020</td>
+                    <td class="budynek title" colspan="1" style="background-color:#FFFA65;">C</td>
+                    <td class="budynek title" colspan="1">A2020</td>
+                    <td class="budynek title" colspan="1">B2020</td>
+                    <td class="budynek title" colspan="1">A2020</td>
+                    <td class="budynek title" colspan="18">B2020</td>
+                    <td class="budynek title" colspan="21">A2020</td>
+                    <td class="budynek title" colspan="18">B2020</td>
+                    <td class="budynek title" colspan="21" style="background-color:#FFFA65;">C</td>
+                    <td class="budynek title" colspan="1">F</td>
+                    <td class="budynek title" colspan="5">B2020</td>
+                    <td class="budynek title" colspan="17">H</td>
+                    <td class="budynek title" colspan="2">A2020</td>
+                    <td class="budynek title" colspan="2">B2020</td>
+                    <td class="budynek title" colspan="2">G</td>
+                    <td class="budynek title" colspan="2">B2020</td>
+                    <td class="budynek title" colspan="1">A2020</td>\r\n\t\t\t</tr>
+                <tr id="SaleTableHeaderRow">\r\n\t\t\t\t
+                    <td></td>
+                    <td></td>
+                    <td class="sala title" align="center">B/1 Aula Główna</td>
+                    <td class="sala title" align="center">A/1</td>
+                    <td class="sala title" align="center">C 1</td>
+                    <td class="sala title" align="center">A/Aula 160</td>
+                    <td class="sala title" align="center">B/111</td>
+                    <td class="sala title" align="center">B/110</td>
+                    <td class="sala title" align="center">C 101</td>
+                    <td class="sala title" align="center">A/Aula 264</td>
+                    <td class="sala title" align="center">B/240</td>
+                    <td class="sala title" align="center">A/Aula 364</td>
+                    <td class="sala title" align="center">B/337</td>
+                    <td class="sala title" align="center">B/231</td>
+                    <td class="sala title" align="center">B/246</td>
+                    <td class="sala title" align="center">B/112 AW</td>
+                    <td class="sala title" align="center">B/113 AW</td>
+                    <td class="sala title" align="center">B/114 AW</td>
+                    <td class="sala title" align="center">B/117 AW</td>
+                    <td class="sala title" align="center">B/208</td>
+                    <td class="sala title" align="center">B/214 typogr.</td>
+                    <td class="sala title" align="center">B/17</td>
+                    <td class="sala title" align="center">B/107</td>
+                    <td class="sala title" align="center">B/108</td>
+                    <td class="sala title" align="center">B/109</td>
+                    <td class="sala title" align="center">B/131</td>
+                    <td class="sala title" align="center">B/248</td>
+                    <td class="sala title" align="center">B/249</td>
+                    <td class="sala title" align="center">B/227A</td>
+                    <td class="sala title" align="center">B/228B</td>
+                    <td class="sala title" align="center">A/157</td>
+                    <td class="sala title" align="center">A/158</td>
+                    <td class="sala title" align="center">A/161</td>
+                    <td class="sala title" align="center">A/162</td>
+                    <td class="sala title" align="center">A/163</td>
+                    <td class="sala title" align="center">A/164</td>
+                    <td class="sala title" align="center">A/259</td>
+                    <td class="sala title" align="center">A/260</td>
+                    <td class="sala title" align="center">A/262</td>
+                    <td class="sala title" align="center">A/257</td>
+                    <td class="sala title" align="center">A/258</td>
+                    <td class="sala title" align="center">A/261</td>
+                    <td class="sala title" align="center">A/263</td>
+                    <td class="sala title" align="center">A/265</td>
+                    <td class="sala title" align="center">A/357</td>
+                    <td class="sala title" align="center">A/358</td>
+                    <td class="sala title" align="center">A/359</td>
+                    <td class="sala title" align="center">A/360</td>
+                    <td class="sala title" align="center">A/361</td>
+                    <td class="sala title" align="center">A/362</td>
+                    <td class="sala title" align="center">A/363</td>
+                    <td class="sala title" align="center">B/01</td>
+                    <td class="sala title" align="center">B/03</td>
+                    <td class="sala title" align="center">B/13</td>
+                    <td class="sala title" align="center">B/19</td>
+                    <td class="sala title" align="center">B/120</td>
+                    <td class="sala title" align="center">B/130</td>
+                    <td class="sala title" align="center">B/132</td>
+                    <td class="sala title" align="center">B/133 MAC</td>
+                    <td class="sala title" align="center">B/217</td>
+                    <td class="sala title" align="center">B/220</td>
+                    <td class="sala title" align="center">B/223</td>
+                    <td class="sala title" align="center">B/224</td>
+                    <td class="sala title" align="center">B/226A</td>
+                    <td class="sala title" align="center">B/226B</td>
+                    <td class="sala title" align="center">B/230</td>
+                    <td class="sala title" align="center">B/232</td>
+                    <td class="sala title" align="center">B/233</td>
+                    <td class="sala title" align="center">B/234</td>
+                    <td class="sala title" align="center">C 5 SNM ang</td>
+                    <td class="sala title" align="center">C 020 (sitodruk)</td>
+                    <td class="sala title" align="center">C 025 SNM ang</td>
+                    <td class="sala title" align="center">C 026 Fot</td>
+                    <td class="sala title" align="center">C 107 SNM</td>
+                    <td class="sala title" align="center">10C</td>
+                    <td class="sala title" align="center">11C</td>
+                    <td class="sala title" align="center">C 01 rzeźba</td>
+                    <td class="sala title" align="center">C 06 Grk Art</td>
+                    <td class="sala title" align="center">C 07 Grk Art</td>
+                    <td class="sala title" align="center">C 102</td>
+                    <td class="sala title" align="center">C 103</td>
+                    <td class="sala title" align="center">C 104 MAL</td>
+                    <td class="sala title" align="center">C 109 MAL</td>
+                    <td class="sala title" align="center">C 111 MAL</td>
+                    <td class="sala title" align="center">C 115</td>
+                    <td class="sala title" align="center">C 116</td>
+                    <td class="sala title" align="center">C 2 MAL</td>
+                    <td class="sala title" align="center">C 012 anim</td>
+                    <td class="sala title" align="center">C 013 mult</td>
+                    <td class="sala title" align="center">C 10</td>
+                    <td class="sala title" align="center">F1</td>
+                    <td class="sala title" align="center">WIRT/501k</td>
+                    <td class="sala title" align="center">WIRT/504m</td>
+                    <td class="sala title" align="center">WIRT WYKŁ</td>
+                    <td class="sala title" align="center">WIRT/502k</td>
+                    <td class="sala title" align="center">WIRT/503m</td>
+                    <td class="sala title" align="center">H/301 lek</td>
+                    <td class="sala title" align="center">H/302 lek</td>
+                    <td class="sala title" align="center">H/303 lek</td>
+                    <td class="sala title" align="center">H/306 lek</td>
+                    <td class="sala title" align="center">H/307 lek</td>
+                    <td class="sala title" align="center">H/308 lek</td>
+                    <td class="sala title" align="center">H/309 lek</td>
+                    <td class="sala title" align="center">H/310 lek</td>
+                    <td class="sala title" align="center">H/311 lek</td>
+                    <td class="sala title" align="center">H/312 lek</td>
+                    <td class="sala title" align="center">H/313 lek</td>
+                    <td class="sala title" align="center">H/314 lek</td>
+                    <td class="sala title" align="center">H/410 lek</td>
+                    <td class="sala title" align="center">H/411</td>
+                    <td class="sala title" align="center">H/412 lek</td>
+                    <td class="sala title" align="center">H/413</td>
+                    <td class="sala title" align="center">H/414</td>
+                    <td class="sala title" align="center">A/Hol - przestrzeń</td>
+                    <td class="sala title" align="center">A/Hol - wystawa</td>
+                    <td class="sala title" align="center">B/ hol - wystawa</td>
+                    <td class="sala title" align="center">B/hol - przestrzeń</td>
+                    <td class="sala title" align="center">G01/SNMang</td>
+                    <td class="sala title" align="center">G02/SNMang</td>
+                    <td class="sala title" align="center">B/241</td>
+                    <td class="sala title" align="center">B/247</td>
+                    <td class="sala title" align="center">Hol - piętro I</td>\r\n\t\t\t</tr>\r\n\t\t</thead>
+            <tbody>\r\n\t\t\t
+                <tr>\r\n\t\t\t\t
+                    <td class="dzien title" colspan="122">Czwartek - 31.03.2022</td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="pelnaGodzina title" rowspan="4">7</td>
+                    <td class="minuty title">0</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">15</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">45</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649967283;z" align="center" valign="middle" rowspan="9" style="color:#000000;background-color:#953B5F;">ANG2<br />WGs<br />I.2<br />-<br />113l<br />ang</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="pelnaGodzina title" rowspan="4">8</td>
+                    <td class="minuty title">0</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649946265;z" align="center" valign="middle" rowspan="9" style="color:#000000;background-color:#953B5F;">PIN4<br />WGs<br />I.4<br />-<br />14c<br />ang</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649946296;z" align="center" valign="middle" rowspan="9" style="color:#000000;background-color:#953B5F;">PIN4<br />WGs<br />I.4<br />-<br />12c<br />ang</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649967493;z" align="center" valign="middle" rowspan="9" style="color:#000000;background-color:#953B5F;">GF4<br />WGs<br />I.6<br />OB.GF4<br />11c<br />ang</td>
+                    <td id="649939190;z" align="center" valign="middle" rowspan="9" style="color:#000000;background-color:#953B5F;">JW2<br />WGs<br />I.2<br />-<br />14c<br />ang</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">15</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649944134;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#E24C2F;">PGO<br />WZs<br />I.2<br />-<br />1w</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649959110;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#C6233E;">ANG4<br />WAs<br />I.4<br />-<br />111l</td>
+                    <td id="649939620;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#C6233E;">ANG4<br />WAs<br />I.4<br />-<br />112l</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649958720;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#3AEB34;">NAI<br />WIs<br />I.4<br />-<br />99c<br />ang</td>
+                    <td id="649970300;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">ALG<br />WIs<br />I.2<br />-<br />25c<br />ang</td>
+                    <td></td>
+                    <td id="649961670;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#E24C2F;">ZAJ<br />WZs<br />I.4<br />-<br />13c</td>
+                    <td id="649954959;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#D98F11;">JAP6Na<br />WKs<br />I.6<br />OB.JAP6Na<br />11c</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649961993;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#953B5F;">GRW<br />WGs<br />I.6<br />OB.GRW<br />11c</td>
+                    <td id="649956226;z" align="center" valign="middle" rowspan="6" style="color:#FFFFFF;background-color:#953B5F;">PC1<br />WGs<br />II.2<br />OB.PC1<br />11c<br />ang<br />(*)</td>
+                    <td id="649960398;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">BSI<br />WIs<br />I.6<br />-<br />28c</td>
+                    <td></td>
+                    <td></td>
+                    <td id="649970067;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#953B5F;">PAR<br />WGs<br />I.4<br />-<br />14c</td>
+                    <td id="649965819;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRI<br />WIs<br />I.4<br />-<br />20c</td>
+                    <td id="649942213;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">GUI<br />WIs<br />I.2<br />-<br />19c<br />ang</td>
+                    <td></td>
+                    <td id="649946410;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">NAI<br />WIs<br />I.4<br />-<br />26c</td>
+                    <td></td>
+                    <td id="649969114;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PJC<br />WIs<br />I.2<br />-<br />11c<br />ang</td>
+                    <td id="649952454;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PJC<br />WIs<br />I.2<br />-<br />12c<br />ang</td>
+                    <td id="649947228;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">RBD<br />WIs<br />I.2<br />-<br />13c<br />ang</td>
+                    <td id="649942542;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">RBD<br />WIs<br />I.2<br />-<br />14c<br />ang</td>
+                    <td id="649950463;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRI<br />WIs<br />I.4<br />-<br />19c</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649954714;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">MIW<br />WIs<br />I.6<br />OB.MIW<br />25c</td>
+                    <td></td>
+                    <td></td>
+                    <td id="649954415;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRI<br />WIs<br />I.4<br />-<br />15c<br />ang</td>
+                    <td></td>
+                    <td id="649967923;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PSM<br />WIs<br />I.4<br />OB.PSM<br />13c<br />ang</td>
+                    <td></td>
+                    <td id="649960588;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">APBD<br />WIs<br />I.4<br />OB.APBD<br />11c</td>
+                    <td id="649946658;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">APBD<br />WIs<br />I.4<br />OB.APBD<br />12c</td>
+                    <td id="649968595;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">APBD<br />WIs<br />I.4<br />OB.APBD<br />11c<br />ang</td>
+                    <td id="649957736;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#E24C2F;">FWP<br />WZs<br />I.4<br />-<br />14c</td>
+                    <td></td>
+                    <td></td>
+                    <td id="649945562;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">MUL<br />WIs<br />I.4<br />-<br />16c<br />ang</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="50886352;r" align="center" valign="middle" rowspan="40" style="color:#000000;background-color:#7C8484;">Rzeźba Schwencke Boris s.C 025 SNM ang</td>
+                    <td id="649948432;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#953B5F;">FOT2<br />WGs<br />I.2<br />-<br />16c</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649952650;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#D98F11;">ANG2<br />WKs<br />I.2<br />-<br />111l</td>
+                    <td id="649964866;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#D98F11;">ANG2<br />WKs<br />I.2<br />-<br />112l</td>
+                    <td id="649942380;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#D98F11;">ANG2<br />WKs<br />I.2<br />-<br />113l</td>
+                    <td id="649949784;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#D98F11;">ANG2<br />WKs<br />I.2<br />-<br />114l</td>
+                    <td id="649943349;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#D98F11;">ANG2<br />WKs<br />I.2<br />-<br />115l</td>
+                    <td id="649963254;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#D98F11;">ANG2<br />WKs<br />I.2<br />-<br />116l</td>
+                    <td id="649963631;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#D98F11;">JAP4n<br />WKs<br />I.4<br />OB.JAP4n<br />11c</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649967777;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#3AEB34;">GUI<br />WIs<br />I.2<br />-<br />1w</td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">45</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="pelnaGodzina title" rowspan="4">9</td>
+                    <td class="minuty title">0</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649957874;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#C6233E;">HSK2<br />WAs<br />I.2<br />-<br />1w</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">15</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">45</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="pelnaGodzina title" rowspan="4">10</td>
+                    <td class="minuty title">0</td>
+                    <td></td>
+                    <td></td>
+                    <td id="649948808;z" align="center" valign="middle" rowspan="9" style="color:#FFFFFF;background-color:#953B5F;">SEMMAG3W<br />WGs<br />II.4<br />SNM_WIZM...td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">15</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="50886534;r" align="center" valign="middle" rowspan="15" style="color:#000000;background-color:#7C8484;">Kurs 0 Myszewska Marta s.B/240</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="50886097;r" align="center" valign="middle" rowspan="14" style="color:#000000;background-color:#7C8484;">Kurs 0 Myszewska Marta s.A/158</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649957026;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#E24C2F;">OWL<br />WZs<br />I.6<br />-<br />1w</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649950253;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#E24C2F;">PPB<br />WZs<br />I.2<br />-<br />12c<br />ang</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649941260;z" align="center" valign="middle" rowspan="9" style="color:#000000;background-color:#953B5F;">TB1<br />WGs<br />I.4<br />OB.TB1<br />13c</td>
+                    <td id="649944067;z" align="center" valign="middle" rowspan="6" style="color:#FFFFFF;background-color:#E24C2E;">PDC<br />WZs<br />II.3<br />ZI_ABBD<br />1w</td>
+                    <td id="649967807;z" align="center" valign="middle" rowspan="6" style="color:#FFFFFF;background-color:#E24C2E;">AKO<br />WZs<br />II.3<br />ZI_ASI<br />1w</td>
+                    <td></td>
+                    <td></td>
+                    <td id="649957409;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2b<br />WIs<br />I.6<br />B<br />11c</td>
+                    <td></td>
+                    <td></td>
+                    <td id="649960435;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2e<br />WIs<br />I.6<br />E<br />11c</td>
+                    <td></td>
+                    <td id="649944347;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2abd<br />WIs<br />I.6<br />A_BD<br />15c</td>
+                    <td id="649944396;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2abd<br />WIs<br />I.6<br />A_BD<br />13c</td>
+                    <td id="649944449;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2abd<br />WIs<br />I.6<br />A_BD<br />11c</td>
+                    <td></td>
+                    <td id="649944109;z" align="center" valign="middle" rowspan="6" style="color:#FFFFFF;background-color:#54657E;">IDH<br />WIs<br />II.1<br />OB.IDH<br />11c<br />ang</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649941053;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PUM<br />WIs<br />I.6<br />OB.PUM<br />12c<br />ang</td>
+                    <td id="649946946;z" align="center" valign="middle" rowspan="6" style="color:#FFFFFF;background-color:#E24C2E;">TSIT<br />WZs<br />II.1<br />-<br />1w</td>
+                    <td id="649968325;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2aio<br />WIs<br />I.6<br />A_IO<br />11c</td>
+                    <td></td>
+                    <td id="649953323;z" align="center" valign="middle" rowspan="6" style="color:#FFFFFF;background-color:#54657E;">ZBD<br />WIs<br />II.1<br />OB.ZBD<br />11c</td>
+                    <td id="649969666;z" align="center" valign="middle" rowspan="6" style="color:#FFFFFF;background-color:#54657E;">WPBD<br />WIs<br />II.1<br />OB.WPBD<br />11c</td>
+                    <td id="649969231;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">TPO<br />WIs<br />I.4<br />OB.TPO<br />14c<br />ang</td>
+                    <td id="649961552;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">TPO<br />WIs<br />I.4<br />OB.TPO<br />17c</td>
+                    <td id="649953006;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">TPO<br />WIs<br />I.4<br />OB.TPO<br />18c</td>
+                    <td></td>
+                    <td></td>
+                    <td id="649948435;z" align="center" valign="middle" rowspan="9" style="color:#000000;background-color:#953B5F;">DOKF1<br />WGs<br />I.4<br />OB.DOKF1<br />11c</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649947588;z" align="center" valign="middle" rowspan="6" style="color:#FFFFFF;background-color:#953B5F;">ZPGA2<br />WGs<br />II.2<br />OB.ZPGA2<br />11c</td>
+                    <td></td>
+                    <td></td>
+                    <td id="649957976;z" align="center" valign="middle" rowspan="6" style="color:#FFFFFF;background-color:#953B5F;">ZPKA2<br />WGs<br />II.2<br />OB.ZPKA2<br />11c</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649948310;z" align="center" valign="middle" rowspan="6" style="color:#FFFFFF;background-color:#953B5F;">ZP3D2<br />WGs<br />II.2<br />OB.ZP3D2<br />11c<br />ang<br />(*)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649953717;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">LEK<br />WIs<br />I.4<br />-<br />114l<br />ang</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649964062;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">MAD<br />WIs<br />I.2<br />-<br />23c<br />ang</td>
+                    <td id="649958774;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">MAD<br />WIs<br />I.2<br />-<br />24c<br />ang</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">45</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="pelnaGodzina title" rowspan="4">18</td>
+                    <td class="minuty title">0</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649941635;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#953B5F;">TYP2<br />WGs<br />I.2<br />-<br />14c</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649955599;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#953B5F;">ANI1<br />WGs<br />I.2<br />-<br />15c</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649939090;z" align="center" valign="middle" rowspan="9" style="color:#000000;background-color:#953B5F;">JW2<br />WGs<br />I.2<br />-<br />14c<br />ang</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">15</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">45</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="pelnaGodzina title" rowspan="4">19</td>
+                    <td class="minuty title">0</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">15</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649944068;z" align="center" valign="middle" rowspan="6" style="color:#FFFFFF;background-color:#E24C2E;">PDC<br />WZs<br />II.3<br />ZI_ABBD<br />11c</td>
+                    <td></td>
+                    <td id="649967808;z" align="center" valign="middle" rowspan="6" style="color:#FFFFFF;background-color:#E24C2E;">AKO<br />WZs<br />II.3<br />ZI_ASI<br />11c</td>
+                    <td></td>
+                    <td id="649957410;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2b<br />WIs<br />I.6<br />B<br />11c<br />ang</td>
+                    <td></td>
+                    <td></td>
+                    <td id="649960436;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2e3d<br />WIs<br />I.6<br />E_3D<br />11c</td>
+                    <td id="649958315;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2d<br />WIs<br />I.6<br />D<br />11c</td>
+                    <td id="649944348;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2abd<br />WIs<br />I.6<br />A_BD<br />16c</td>
+                    <td id="649944397;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2abd<br />WIs<br />I.6<br />A_BD<br />14c</td>
+                    <td id="649944450;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2abd<br />WIs<br />I.6<br />A_BD<br />12c</td>
+                    <td id="649944479;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2abd<br />WIs<br />I.6<br />A_BD<br />17c</td>
+                    <td></td>
+                    <td id="649945018;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2f<br />WIs<br />I.6<br />F<br />11c</td>
+                    <td id="649944992;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2f<br />WIs<br />I.6<br />F<br />11c<br />ang</td>
+                    <td id="649953307;z" align="center" valign="middle" rowspan="6" style="color:#FFFFFF;background-color:#54657E;">ZBD<br />WIs<br />II.1<br />OB.ZBD<br />12c</td>
+                    <td id="649944161;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2abd<br />WIs<br />I.6<br />A_BD<br />12c<br />ang</td>
+                    <td id="649959856;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2d<br />WIs<br />I.6<br />D<br />11c<br />ang</td>
+                    <td id="649946947;z" align="center" valign="middle" rowspan="6" style="color:#FFFFFF;background-color:#E24C2E;">TSIT<br />WZs<br />II.1<br />-<br />11c</td>
+                    <td id="50886234;r" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#7C8484;">pro Trzaska Mariusz s.B/132</td>
+                    <td id="649967737;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2h<br />WIs<br />I.6<br />H<br />11c</td>
+                    <td id="649947381;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2abd<br />WIs<br />I.6<br />A_BD<br />11c<br />ang</td>
+                    <td id="649969667;z" align="center" valign="middle" rowspan="6" style="color:#FFFFFF;background-color:#54657E;">WPBD<br />WIs<br />II.1<br />DS<br />-<br />11c</td>
+                    <td></td>
+                    <td></td>
+                    <td id="649960465;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#54657E;">PRO2e3d (*)<br />WIs<br />I.6<br />E_3D<br />11c<br />ang<br />(*)</td>
+                    <td id="649961322;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#E24C2F;">WYT<br />WZs<br />I.6<br />-<br />12c</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649953718;z" align="center" valign="middle" rowspan="6" style="color:#FFFFFF;background-color:#54657E;">LEK<br />WIs<br />II.3<br />-<br />111l</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649941636;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#953B5F;">TYP2<br />WGs<br />I.2<br />-<br />17c</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="649955600;z" align="center" valign="middle" rowspan="6" style="color:#000000;background-color:#953B5F;">ANI1<br />WGs<br />I.2<br />-<br />14c</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">45</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="pelnaGodzina title" rowspan="4">20</td>
+                    <td class="minuty title">0</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">15</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>
+                <tr>\r\n\t\t\t\t
+                    <td class="minuty title">45</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>\r\n\t\t\t</tr>\r\n\t\t</tbody>\r\n\t</table>\r\n </div>\r\n \r\n</div>'
