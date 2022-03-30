@@ -114,7 +114,7 @@ if __name__ == '__main__':
     debug_path = Path('debug')
     debug_path.mkdir(parents=True, exist_ok=True)
 
-    with open('debug/debug_date_change.html', 'w') as file:
+    with open(f'debug/debug_date_change_{working_date}.html', 'w') as file:
         file.write(x1.content.decode('utf-8').split('|')[7])
 
     all_ids = sb.get_html_ids_for_date(x1)
